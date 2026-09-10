@@ -3,78 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Getsupportit.com</title>
+    <title>Getsupportit – Managed IT Services</title>
 
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f8ff;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f5f7fa;
             color: #1a1a1a;
         }
 
-        /* Header */
-        header {
-            background-color: #0a4cff;
-            padding: 20px;
-            text-align: center;
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, #0a1f4d, #0f4ccf);
             color: white;
+            padding: 90px 20px;
+            text-align: center;
         }
 
-        header h1 {
+        .hero h1 {
+            font-size: 50px;
             margin: 0;
-            font-size: 32px;
+            font-weight: 700;
         }
 
-        /* Navigation */
+        .hero p {
+            font-size: 22px;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* SEARCH BAR */
+        .search-container {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .search-container input {
+            width: 60%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            font-size: 18px;
+        }
+
+        /* NAV */
         nav {
-            background-color: #0036c7;
-            padding: 10px;
+            background-color: #0a1f4d;
+            padding: 12px;
             text-align: center;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 18px;
             font-size: 18px;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            opacity: 0.7;
         }
 
-        /* Sections */
+        /* SECTIONS */
         section {
-            padding: 40px;
-            max-width: 900px;
+            padding: 50px 20px;
+            max-width: 1100px;
             margin: auto;
         }
 
         h2 {
-            color: #0036c7;
-            border-left: 5px solid #0a4cff;
-            padding-left: 10px;
+            color: #0a1f4d;
+            font-size: 32px;
+            border-left: 6px solid #0f4ccf;
+            padding-left: 12px;
+            margin-bottom: 20px;
         }
 
-        /* FAQ */
-        .faq {
-            background: #e8efff;
-            padding: 20px;
+        /* SERVICES GRID */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .service-box {
+            background: white;
+            padding: 25px;
             border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         }
 
-        .faq p {
-            margin: 10px 0;
+        .service-box h3 {
+            color: #0f4ccf;
+            margin-top: 0;
         }
 
-        /* Footer */
+        /* AI HELP AGENT */
+        .ai-agent {
+            background: #e8efff;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .ai-agent h3 {
+            color: #0a1f4d;
+        }
+
+        /* CHAT BOX */
+        .chat-box {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-top: 20px;
+        }
+
+        .chat-box input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        /* FOOTER */
         footer {
-            background-color: #0a4cff;
+            background-color: #0a1f4d;
             color: white;
             text-align: center;
-            padding: 15px;
+            padding: 20px;
             margin-top: 40px;
         }
     </style>
@@ -82,56 +143,89 @@
 
 <body>
 
-    <header>
-        <h1>Welcome to Getsupportit.com</h1>
-        <p>Your trusted tech support & solutions hub</p>
-    </header>
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Getsupportit</h1>
+        <p>Your Trusted Managed IT Service Provider</p>
+        <p><em>“Reliable. Secure. Always There When You Need Us.”</em></p>
 
+        <!-- SEARCH BAR -->
+        <div class="search-container">
+            <input type="text" placeholder="Search for IT help, services, or solutions...">
+        </div>
+    </div>
+
+    <!-- NAV -->
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#tech">Tech Info</a>
-        <a href="#faq">FAQ</a>
+        <a href="#services">Services</a>
+        <a href="#ai">AI Help Agent</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <section id="home">
-        <h2>Home</h2>
-        <p>Getsupportit.com provides easy, beginner‑friendly tech support for computers, phones, software, websites, and more. Our goal is to make technology simple and stress‑free.</p>
-    </section>
+    <!-- SERVICES -->
+    <section id="services">
+        <h2>Our Managed IT Services</h2>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>We are a free tech‑support platform hosted on GitHub Pages. We offer guides, troubleshooting steps, and tools to help users fix issues quickly and learn new skills.</p>
-    </section>
+        <div class="services">
+            <div class="service-box">
+                <h3>24/7 IT Support</h3>
+                <p>Round‑the‑clock monitoring, troubleshooting, and remote support for your business.</p>
+            </div>
 
-    <section id="tech">
-        <h2>Tech Information</h2>
-        <p><strong>Computer Support:</strong> Windows, Mac, software installation, performance fixes.</p>
-        <p><strong>Mobile Support:</strong> Android & iPhone setup, app issues, connectivity problems.</p>
-        <p><strong>Web & Hosting:</strong> GitHub Pages, domain setup, DNS configuration.</p>
-        <p><strong>Developer Tools:</strong> Git, GitHub, VS Code, HTML, CSS, JavaScript basics.</p>
-    </section>
+            <div class="service-box">
+                <h3>Cybersecurity Protection</h3>
+                <p>Threat detection, firewall management, secure endpoint protection.</p>
+            </div>
 
-    <section id="faq">
-        <h2>FAQ</h2>
-        <div class="faq">
-            <p><strong>1. What is Getsupportit.com?</strong><br>A free tech‑support website offering guides and troubleshooting help.</p>
-            <p><strong>2. Is it beginner‑friendly?</strong><br>Yes — everything is written in simple language.</p>
-            <p><strong>3. Do I need to pay?</strong><br>No — the website is completely free.</p>
-            <p><strong>4. How do I contact support?</strong><br>See the contact section below.</p>
+            <div class="service-box">
+                <h3>Cloud & Backup Solutions</h3>
+                <p>Secure cloud migration, automated backups, disaster recovery planning.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Network Management</h3>
+                <p>Professional setup, optimization, and monitoring of your business network.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Microsoft 365 Support</h3>
+                <p>Setup, management, and troubleshooting for Microsoft 365 and business email systems.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>On‑Site & Remote Assistance</h3>
+                <p>Fast response for both remote issues and on‑location technical support.</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <strong>your-email@example.com</strong></p>
-        <p>Website: <strong>https://getsupportit.com</strong></p>
-        <p>GitHub Repo: <strong>(add your repo link)</strong></p>
+    <!-- AI HELP AGENT -->
+    <section id="ai">
+        <h2>AI Help Agent</h2>
+        <div class="ai-agent">
+            <h3>Instant AI Assistance</h3>
+            <p>Our AI Help Agent provides quick answers, troubleshooting steps, and guidance for your IT issues.</p>
+            <p><strong>Ask anything — from network problems to software errors.</strong></p>
+        </div>
+
+        <!-- CHAT BOX -->
+        <div class="chat-box">
+            <h3>Chat With AI</h3>
+            <input type="text" placeholder="Type your question here... (visual only)">
+        </div>
     </section>
 
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <strong>support@getsupportit.com</strong></p>
+        <p>Website: <strong>https://getsupportit.com</strong></p>
+        <p>We respond within 1–2 hours.</p>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Getsupportit.com — All Rights Reserved</p>
+        <p>© 2026 Getsupportit — Managed IT Services</p>
     </footer>
 
 </body>
