@@ -4,7 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services – Getsupportit</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #1a1a1a;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #0a1f4d;
+            padding: 14px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #bcd3ff;
+        }
+
+        /* PAGE HEADER */
+        h2 {
+            color: #0a1f4d;
+            font-size: 36px;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* SERVICES GRID */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .service-box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+
+        .service-box:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        }
+
+        .service-box h3 {
+            color: #0f4ccf;
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        .service-box p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .service-box a {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 16px;
+            background-color: #0f4ccf;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .service-box a:hover {
+            background-color: #0a1f4d;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #0a1f4d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,31 +125,31 @@
     <div class="services">
         <div class="service-box">
             <h3>Managed IT Services</h3>
-            <p>Complete IT management for businesses.</p>
+            <p>Complete IT management for businesses with 24/7 monitoring and support.</p>
             <a href="managed-it.html">Learn More</a>
         </div>
 
         <div class="service-box">
             <h3>Network Support</h3>
-            <p>Reliable network setup, monitoring, and troubleshooting.</p>
+            <p>Reliable network setup, monitoring, optimization, and troubleshooting.</p>
             <a href="network-support.html">Learn More</a>
         </div>
 
         <div class="service-box">
             <h3>Cybersecurity</h3>
-            <p>Protect your business from threats.</p>
+            <p>Advanced protection against cyber threats, malware, and unauthorized access.</p>
             <a href="cybersecurity.html">Learn More</a>
         </div>
 
         <div class="service-box">
             <h3>Cloud Services</h3>
-            <p>Cloud migration, backups, and management.</p>
+            <p>Cloud migration, backups, storage solutions, and secure cloud management.</p>
             <a href="cloud-services.html">Learn More</a>
         </div>
 
         <div class="service-box">
             <h3>Remote Support</h3>
-            <p>Instant remote troubleshooting.</p>
+            <p>Instant remote troubleshooting for software, systems, and user issues.</p>
             <a href="remote-support.html">Learn More</a>
         </div>
     </div>
