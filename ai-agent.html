@@ -145,3 +145,182 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Q&A Bot – Getsupportit</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #1a1a1a;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #0a1f4d;
+            padding: 14px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #bcd3ff;
+        }
+
+        /* PAGE HEADER */
+        h2 {
+            color: #0a1f4d;
+            font-size: 36px;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* AI BOT BOX */
+        .bot-box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .bot-box h3 {
+            color: #0f4ccf;
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        /* INPUT */
+        #userInput {
+            width: 100%;
+            padding: 14px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        #userInput:focus {
+            border-color: #0f4ccf;
+            outline: none;
+            box-shadow: 0 0 6px rgba(15, 76, 207, 0.3);
+        }
+
+        /* RESPONSE BOX */
+        .response {
+            margin-top: 20px;
+            background: #e8efff;
+            padding: 20px;
+            border-radius: 10px;
+            color: #0a1f4d;
+            font-size: 18px;
+            display: none;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #0a1f4d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+
+    <script>
+        function getAIResponse(question) {
+            question = question.toLowerCase();
+
+            // Predefined answers
+            const answers = {
+                "who are you": "We are Getsupportit — a trusted Managed IT Service Provider offering secure, reliable, and scalable IT solutions.",
+                "who are we": "Getsupportit is a professional Managed IT Service Provider focused on reliability, security, and long‑term partnerships.",
+                "what do you do": "We provide Managed IT Services, Network Support, Cybersecurity, Cloud Solutions, and Remote Support.",
+                "what do we do": "We help businesses stay secure, productive, and supported with complete IT management.",
+                "services": "Our services include Managed IT, Network Support, Cybersecurity, Cloud Services, and Remote Support.",
+                "what services do you provide": "We offer Managed IT Services, Network Support, Cybersecurity, Cloud Solutions, and Remote Support.",
+                "support": "We provide 24/7 support, remote troubleshooting, on‑site visits, and proactive monitoring.",
+                "cybersecurity": "We offer firewalls, threat monitoring, malware protection, vulnerability scanning, and full security audits.",
+                "network": "We design, install, optimize, secure, and troubleshoot business networks.",
+                "cloud": "We provide cloud migration, backups, storage, disaster recovery, and cloud security.",
+                "remote support": "We offer instant remote troubleshooting for software, systems, and user issues.",
+                "contact": "You can contact us through our Contact page for support, questions, or service requests.",
+                "about": "Getsupportit focuses on reliability, security, transparency, and innovation to support your business."
+            };
+
+            // Find matching answer
+            for (let key in answers) {
+                if (question.includes(key)) {
+                    return answers[key];
+                }
+            }
+
+            return "I'm not sure about that — but I can help with questions related to Getsupportit, our services, support, or IT solutions.";
+        }
+
+        function askAI() {
+            const input = document.getElementById("userInput").value;
+            const responseBox = document.querySelector(".response");
+
+            if (input.trim() === "") return;
+
+            const answer = getAIResponse(input);
+            responseBox.style.display = "block";
+            responseBox.innerText = answer;
+        }
+    </script>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="ai-agent.html">AI Help Agent</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+    <h2>AI Q&A Bot</h2>
+
+    <div class="bot-box">
+        <h3>Ask the AI Anything About Getsupportit</h3>
+        <p>Type your question below — the AI will answer instantly.</p>
+
+        <input id="userInput" type="text" placeholder="Ask something like: Who are we? What do you do? What services do you provide?" onkeyup="askAI()">
+
+        <div class="response"></div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Getsupportit — Managed IT Services</p>
+</footer>
+
+</body>
+</html>
+
