@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ – Getsupportit</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #1a1a1a;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #0a1f4d;
+            padding: 14px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #bcd3ff;
+        }
+
+        /* PAGE HEADER */
+        h2 {
+            color: #0a1f4d;
+            font-size: 36px;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* FAQ ITEM */
+        .faq-item {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+            border-left: 6px solid #0f4ccf;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        }
+
+        .faq-item h3 {
+            margin: 0;
+            font-size: 22px;
+            color: #0a1f4d;
+        }
+
+        .faq-item p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+            display: none;
+            color: #333;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #0a1f4d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+
+    <script>
+        // FAQ Expand/Collapse
+        document.addEventListener("DOMContentLoaded", function () {
+            const items = document.querySelectorAll(".faq-item");
+
+            items.forEach(item => {
+                item.addEventListener("click", () => {
+                    const answer = item.querySelector("p");
+                    const isVisible = answer.style.display === "block";
+                    answer.style.display = isVisible ? "none" : "block";
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="ai-agent.html">AI Help Agent</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <h3>What services does Getsupportit provide?</h3>
+        <p>We offer Managed IT Services, Network Support, Cybersecurity, Cloud Solutions, Remote Support, and full IT department outsourcing.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Do you offer 24/7 support?</h3>
+        <p>Yes. Our team is available around the clock to ensure your systems stay secure, stable, and fully operational.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Can you help set up or fix our network?</h3>
+        <p>Absolutely. We design, install, optimize, secure, and troubleshoot networks for businesses of all sizes.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Do you support remote employees?</h3>
+        <p>Yes. We provide secure remote access, VPN setup, device management, and remote troubleshooting for remote workers.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>How fast is your response time?</h3>
+        <p>Most issues are resolved within minutes through remote support. On‑site visits are scheduled quickly when needed.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Do you offer cybersecurity protection?</h3>
+        <p>Yes. We provide firewalls, threat monitoring, malware protection, vulnerability scanning, and full security audits.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Can you manage our entire IT department?</h3>
+        <p>Yes. Our Managed IT Services cover full IT operations, monitoring, maintenance, planning, and long‑term strategy.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Do you offer cloud migration and backup services?</h3>
+        <p>Yes. We handle cloud migration, cloud storage, automated backups, disaster recovery, and cloud security.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Is Getsupportit suitable for small businesses?</h3>
+        <p>Absolutely. We support small businesses, startups, and large enterprises with scalable IT solutions.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Do you provide on‑site support?</h3>
+        <p>Yes. When remote support isn’t enough, our technicians can visit your location for hands‑on assistance.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Getsupportit — Managed IT Services</p>
+</footer>
+
+</body>
+</html>
