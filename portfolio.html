@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio – Getsupportit</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #1a1a1a;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #0a1f4d;
+            padding: 14px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #bcd3ff;
+        }
+
+        /* PAGE HEADER */
+        h2 {
+            color: #0a1f4d;
+            font-size: 36px;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* PORTFOLIO GRID */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .portfolio-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: 0.3s;
+            border-left: 6px solid #0f4ccf;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        }
+
+        .portfolio-card h3 {
+            margin-top: 0;
+            color: #0a1f4d;
+            font-size: 22px;
+        }
+
+        .portfolio-card p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 16px;
+            background-color: #0f4ccf;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0a1f4d;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #0a1f4d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="ai-agent.html">AI Help Agent</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+    <h2>Professional IT Portfolio</h2>
+
+    <div class="portfolio-grid">
+
+        <!-- Active Directory -->
+        <div class="portfolio-card">
+            <h3>Active Directory Documentation</h3>
+            <p>Includes AD structure, OU design, GPO strategy, user provisioning workflow, and security model.</p>
+            <a class="btn" href="#" target="_blank">View Documentation</a>
+            <a class="btn" href="#" target="_blank">GitHub</a>
+        </div>
+
+        <!-- Cloud Migration -->
+        <div class="portfolio-card">
+            <h3>On‑Prem to Cloud Migration</h3>
+            <p>Full migration plan including Azure AD Connect, M365 setup, identity sync, risks, and architecture diagrams.</p>
+            <a class="btn" href="#" target="_blank">View Migration Plan</a>
+            <a class="btn" href="#" target="_blank">GitHub</a>
+        </div>
+
+        <!-- User Creation Scripts -->
+        <div class="portfolio-card">
+            <h3>User Creation Scripts</h3>
+            <p>PowerShell scripts for AD user creation, bulk onboarding, Azure AD user creation, group assignment, and licensing.</p>
+            <a class="btn" href="#" target="_blank">Download Scripts</a>
+            <a class="btn" href="#" target="_blank">GitHub</a>
+        </div>
+
+        <!-- Troubleshooting -->
+        <div class="portfolio-card">
+            <h3>Troubleshooting Guides</h3>
+            <p>Real-world troubleshooting documentation for Windows, networks, servers, and root cause analysis.</p>
+            <a class="btn" href="#" target="_blank">View Guides</a>
+            <a class="btn" href="#" target="_blank">GitHub</a>
+        </div>
+
+        <!-- Network Documentation -->
+        <div class="portfolio-card">
+            <h3>Network Documentation</h3>
+            <p>Includes VLAN design, IP schema, firewall rules, and network topology diagrams.</p>
+            <a class="btn" href="#" target="_blank">View Network Docs</a>
+            <a class="btn" href="#" target="_blank">GitHub</a>
+        </div>
+
+        <!-- Security Documentation -->
+        <div class="portfolio-card">
+            <h3>Security Documentation</h3>
+            <p>MFA setup, conditional access, antivirus deployment, patch management, and security hardening.</p>
+            <a class="btn" href="#" target="_blank">View Security Docs</a>
+            <a class="btn" href="#" target="_blank">GitHub</a>
+        </div>
+
+        <!-- Cloud Services -->
+        <div class="portfolio-card">
+            <h3>Cloud Services Documentation</h3>
+            <p>Azure setup, M365 configuration, backup & disaster recovery, cloud security, and automation.</p>
+            <a class="btn" href="#" target="_blank">View Cloud Docs</a>
+            <a class="btn" href="#" target="_blank">GitHub</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Getsupportit — Managed IT Services</p>
+</footer>
+
+</body>
+</html>
